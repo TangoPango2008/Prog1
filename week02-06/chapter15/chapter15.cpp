@@ -17,6 +17,7 @@ int main()
     y.set_color(Color::red);
     win.attach(x);
     win.attach(y);
+    win.wait_for_button();
 
     constexpr int min = -10;
     constexpr int max = 11;
@@ -32,14 +33,15 @@ int main()
     Function f4 (cos,min,max,orig,num,xscale,yscale);
     f4.set_color(Color::blue);  
     Function f5 (sloping_cos,min,max,orig,num,xscale,yscale);
+    win.wait_for_button();
 
-    window.attach(f1);
-    window.attach(f2);
-    window.attach(label_f2);
-    window.attach(f3);
-    window.attach(f4);
-    window.attach(f5);
-    window.wait_for_button();
+    win.attach(f1);
+    win.attach(f2);
+    win.attach(label_f2);
+    win.attach(f3);
+    win.attach(f4);
+    win.attach(f5);
+    win.wait_for_button();
 
 
     return 0;
