@@ -5,7 +5,7 @@
 #include "Graph.h"
 
 #include <string>
-#include <iostrean>
+#include <iostream>
 
 using namespace Graph_lib;
 
