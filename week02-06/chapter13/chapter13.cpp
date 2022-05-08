@@ -2,7 +2,7 @@
 #include "Graph.h"
 
 #include <string>
-#include <iostrean>
+#include <iostream>
 
 using namespace Graph_lib;
 
@@ -18,7 +18,7 @@ int main()
 		Lines grid;
 		int x_size = 800;
 		int y_size = 800;
-		for(int i=100; i<=1x_size; i+=100)
+		for(int i=100; i<=x_size; i+=100)
 		{
 			grid.add(Point(i, 0), Point(i, y_size));
 			grid.add(Point(0, i), Point(x_size, i));
@@ -43,11 +43,11 @@ int main()
         img0.set_mask(Point{0,0},200,200);
 	    img1.set_mask(Point{0,0},200,200);
 	    img2.set_mask(Point{0,0},200,200);
-        win1.attach(img0);
-        win1.attach(img1);
-        win1.attach(img2);
+        win.attach(img0);
+        win.attach(img1);
+        win.attach(img2);
 
-        win1.wait_for_button();
+        win.wait_for_button();
 		//4. badge1.set_mask(Point(xy),x,y)
 
 		Image mvpic {Point{0,0}, "clown.jpg"};
@@ -74,4 +74,5 @@ int main()
 			cerr << "error\n"; 
 			return 2;
 
+	}
 }
