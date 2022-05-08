@@ -62,7 +62,7 @@ int main(){
 		vec.push_back(p);
 	}
 
-	for(Person p: vec)
+	for(person p: vec)
 		cout<< p << endl;
 
 
